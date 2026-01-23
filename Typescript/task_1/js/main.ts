@@ -20,3 +20,19 @@ const teacher3: Teacher = {
 
 // log the object
 console.log(teacher3);
+
+// directors interface extending Teacher
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
+
+// create dir object
+const director1: Directors = {
+  firstName: 'Jolly',
+  lastName: 'Doe',
+  location: 'Perth',
+  fullTimeEmployee: true,
+  numberOfReports: 17,
+};
+
+console.log(director1);
